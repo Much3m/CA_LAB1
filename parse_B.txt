@@ -1,0 +1,79 @@
+0000000 00000 01000 010 11000 0100011
+SW Type Instruction
+ rs1 = 8, imm = 24
+
+
+0000000 00000 01000 010 10100 0100011
+SW Type Instruction
+ rs1 = 8, imm = 20
+
+
+000000010100 01000 010 01110 0000011
+LW Type Instruction
+ rd = 14, rs1 = 8, imm = 20
+
+
+000000000100 01111 000 01111 0010011
+ADDI Type Instruction
+ rd = 15, rs1 = 15, imm = 4
+
+
+0 000001 01111 01110 100 0000 0 1100011
+BLT Type Instruction
+ rs1 = 14, rs2 = 15, imm = 16 
+
+
+000000011000 01000 010 01111 0000011
+LW Type Instruction
+ rd = 15, rs1 = 8, imm = 24
+
+
+000000000100 01111 000 01111 0010011
+ADDI Type Instruction
+ rd = 15, rs1 = 15, imm = 4
+
+
+0000000 01111 01000 010 11000 0100011
+SW Type Instruction
+ rs1 = 8, imm = 24
+
+
+000000010100 01000 010 01111 0000011
+LW Type Instruction
+ rd = 15, rs1 = 8, imm = 20
+
+
+000000000001 01111 000 01111 0010011
+ADDI Type Instruction
+ rd = 15, rs1 = 15, imm = 1
+
+
+0000000 01111 01000 010 10100 0100011
+SW Type Instruction
+ rs1 = 8, imm = 20
+
+
+1 111110 00000 00000 000 1110 1 1100011
+BEQ Type Instruction
+ rs1 = 0, rs2 = 0, imm = 4078 
+
+
+000000011000 01000 010 01111 0000011
+LW Type Instruction
+ rd = 15, rs1 = 8, imm = 24
+
+
+000000001010 01111 000 01111 0010011
+ADDI Type Instruction
+ rd = 15, rs1 = 15, imm = 10
+
+
+0000000 01111 01000 010 11100 0100011
+SW Type Instruction
+ rs1 = 8, imm = 28
+
+
+11111111111111111111111111111111
+ ** END OF THE PROGRAM ** 
+
+

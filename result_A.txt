@@ -1,0 +1,100 @@
+OP CODE : 51 = 51 + 0
+PC : 0
+ADD Type Instruction
+ rd = 7, rs1 = 5, rs2 = 6
+Before ADDI Type Instruction -> rd[30] , rs1[10] , imm[20]
+After : ADD Type Result -> rd[30] = rs1[10] + rs2[20]
+
+
+Current Register Values 
+| x00 : 00 | x01 : 00 | x02 : 00 | x03 : 00 | x04 : 00 | [31mx05 : 10 [0m| [31mx06 : 20 [0m| [31mx07 : 30 [0m
+| x08 : 00 | x09 : 00 | x10 : 00 | x11 : 00 | x12 : 00 | x13 : 00 | x14 : 00 | x15 : 00 
+| x16 : 00 | x17 : 00 | x18 : 00 | x19 : 00 | x20 : 00 | x21 : 00 | x22 : 00 | x23 : 00 
+| x24 : 00 | x25 : 00 | x26 : 00 | x27 : 00 | x28 : 00 | x29 : 00 | x30 : 00 | x31 : 00 
+
+
+OP CODE : 19 = 19 + 0
+PC : 1
+ADDI Type Instruction
+ rd = 5, rs1 = 5, imm = 5
+Before ADDI Type Instruction -> rd[10] , rs1[10] , imm[5]
+After : ADDI Type Result -> rd[15] = rs1[15] + imm[5]
+
+
+Current Register Values 
+| x00 : 00 | x01 : 00 | x02 : 00 | x03 : 00 | x04 : 00 | [31mx05 : 15 [0m| [31mx06 : 20 [0m| [31mx07 : 30 [0m
+| x08 : 00 | x09 : 00 | x10 : 00 | x11 : 00 | x12 : 00 | x13 : 00 | x14 : 00 | x15 : 00 
+| x16 : 00 | x17 : 00 | x18 : 00 | x19 : 00 | x20 : 00 | x21 : 00 | x22 : 00 | x23 : 00 
+| x24 : 00 | x25 : 00 | x26 : 00 | x27 : 00 | x28 : 00 | x29 : 00 | x30 : 00 | x31 : 00 
+
+
+OP CODE : 51 = 51 + 0
+PC : 2
+ADD Type Instruction
+ rd = 6, rs1 = 5, rs2 = 5
+Before ADDI Type Instruction -> rd[20] , rs1[15] , imm[15]
+After : ADD Type Result -> rd[30] = rs1[15] + rs2[15]
+
+
+Current Register Values 
+| x00 : 00 | x01 : 00 | x02 : 00 | x03 : 00 | x04 : 00 | [31mx05 : 15 [0m| [31mx06 : 30 [0m| [31mx07 : 30 [0m
+| x08 : 00 | x09 : 00 | x10 : 00 | x11 : 00 | x12 : 00 | x13 : 00 | x14 : 00 | x15 : 00 
+| x16 : 00 | x17 : 00 | x18 : 00 | x19 : 00 | x20 : 00 | x21 : 00 | x22 : 00 | x23 : 00 
+| x24 : 00 | x25 : 00 | x26 : 00 | x27 : 00 | x28 : 00 | x29 : 00 | x30 : 00 | x31 : 00 
+
+
+OP CODE : 51 = 51 + 0
+PC : 3
+ADD Type Instruction
+ rd = 7, rs1 = 5, rs2 = 6
+Before ADDI Type Instruction -> rd[30] , rs1[15] , imm[30]
+After : ADD Type Result -> rd[45] = rs1[15] + rs2[30]
+
+
+Current Register Values 
+| x00 : 00 | x01 : 00 | x02 : 00 | x03 : 00 | x04 : 00 | [31mx05 : 15 [0m| [31mx06 : 30 [0m| [31mx07 : 45 [0m
+| x08 : 00 | x09 : 00 | x10 : 00 | x11 : 00 | x12 : 00 | x13 : 00 | x14 : 00 | x15 : 00 
+| x16 : 00 | x17 : 00 | x18 : 00 | x19 : 00 | x20 : 00 | x21 : 00 | x22 : 00 | x23 : 00 
+| x24 : 00 | x25 : 00 | x26 : 00 | x27 : 00 | x28 : 00 | x29 : 00 | x30 : 00 | x31 : 00 
+
+
+OP CODE : 99 = 99 + 0
+PC : 4
+BLT Type Instruction
+, rs1 = 6, rs2 = 5, imm = 128 
+
+
+Current Register Values 
+| x00 : 00 | x01 : 00 | x02 : 00 | x03 : 00 | x04 : 00 | [31mx05 : 15 [0m| [31mx06 : 30 [0m| [31mx07 : 45 [0m
+| x08 : 00 | x09 : 00 | x10 : 00 | x11 : 00 | x12 : 00 | x13 : 00 | x14 : 00 | x15 : 00 
+| x16 : 00 | x17 : 00 | x18 : 00 | x19 : 00 | x20 : 00 | x21 : 00 | x22 : 00 | x23 : 00 
+| x24 : 00 | x25 : 00 | x26 : 00 | x27 : 00 | x28 : 00 | x29 : 00 | x30 : 00 | x31 : 00 
+
+
+OP CODE : 5 = 3 + 2
+PC : 5
+LW Type Instruction
+ rd = 6, rs1 = 18, imm = 0
+Before LW Type Instruction -> rd[30], data_mem[0]
+After LW Type Result -> rd = 0
+
+
+Current Register Values 
+| x00 : 00 | x01 : 00 | x02 : 00 | x03 : 00 | x04 : 00 | [31mx05 : 15 [0m| x06 : 00 | [31mx07 : 45 [0m
+| x08 : 00 | x09 : 00 | x10 : 00 | x11 : 00 | x12 : 00 | x13 : 00 | x14 : 00 | x15 : 00 
+| x16 : 00 | x17 : 00 | x18 : 00 | x19 : 00 | x20 : 00 | x21 : 00 | x22 : 00 | x23 : 00 
+| x24 : 00 | x25 : 00 | x26 : 00 | x27 : 00 | x28 : 00 | x29 : 00 | x30 : 00 | x31 : 00 
+
+
+OP CODE : 134 = 127 + 7
+PC : 6
+ ** END OF THE PROGRAM ** 
+
+
+Current Register Values 
+| x00 : 00 | x01 : 00 | x02 : 00 | x03 : 00 | x04 : 00 | [31mx05 : 15 [0m| x06 : 00 | [31mx07 : 45 [0m
+| x08 : 00 | x09 : 00 | x10 : 00 | x11 : 00 | x12 : 00 | x13 : 00 | x14 : 00 | x15 : 00 
+| x16 : 00 | x17 : 00 | x18 : 00 | x19 : 00 | x20 : 00 | x21 : 00 | x22 : 00 | x23 : 00 
+| x24 : 00 | x25 : 00 | x26 : 00 | x27 : 00 | x28 : 00 | x29 : 00 | x30 : 00 | x31 : 00 
+
+
