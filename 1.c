@@ -256,11 +256,13 @@ void step_execution(void) {
 				break;
 		}
 		my_print_register();
+        printf("Press Enter to continue....");
+        getchar();
 		printf("\n========================================================================================================\n");
 	}
 }
 
-void parse_instructions(void) { // execute_instructions 함수와 유사하지만, 연산을 수행하지 않고 모든 명령어를 순회하며 Assembly를 출력하는 함수.
+void Decode_instructions(void) { // execute_instructions 함수와 유사하지만, 연산을 수행하지 않고 모든 명령어를 순회하며 Assembly를 출력하는 함수.
 	int temp = 0;
 	int running = 1;
 	while (running) {
@@ -386,11 +388,11 @@ int main(int ac, char **av) {
 
 	if (ac != 2) {      
         printf("please input the parameter! ex)./test 1\n");
-        printf("1st parameter: Mode (1: Parse Instructions, 2: Execute, 3: Debugging)\n");
+        printf("1st parameter: Mode (1: Decode, 2: Execute, 3: Debugging)\n");
         return -1;
     }
 	if (atoi(av[1]) == 1)
-		parse_instructions();
+		Decode_instructions();
 	else if(atoi(av[1]) == 2)
 		execute_instructions();
 	else if (atoi(av[1]) == 3)
